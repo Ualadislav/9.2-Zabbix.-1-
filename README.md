@@ -17,6 +17,7 @@ sudo apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apa
 su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
 su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'
 systemctl status zabbix-agent.service apache2 zabbix-server.sevice
+
 ---
 
 ### Задание 2 
