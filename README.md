@@ -41,6 +41,7 @@ systemctl status zabbix-agent.service apache2 zabbix-server.sevice
 sudo apt install zabbix-agent -y
 # Запустите Zabbix Agent
 sudo systemctl restart zabbix-agent
+
 sudo systemctl enable zabbix-agent
 # Меняем адрес сервера в zabbix_agentd.conf
 sed -i 's/Server=127.0.0.1/Server=192.168.0.27/g' /etc/zabbix/zabbix_server.conf
